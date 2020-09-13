@@ -1,0 +1,51 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(LEMONMILK-Bold.otf);
+}
+
+html{
+  font-family: myFirstFont;
+  width: auto;
+  background-color: #E5DDCE;
+  text-align: center ;
+}
+
+h1{
+  font-size: 5rem;
+}
+
+.actions{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.button{
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  background-color: brown;
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 1rem;
+  -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+  box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+  transition: 0.1s;
+}
+
+.button:hover{
+  transform: translate(-3px,-3px);
+  -webkit-box-shadow: 16px 16px 0px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 16px 16px 0px 0px rgba(0,0,0,1);
+  box-shadow: 16px 16px 0px 0px rgba(0,0,0,1);
+}
+
+.button:active{
+  transform: translate(3px,3px);
+  -webkit-box-shadow: 7px 7px 0px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 7px 7px 0px 0px rgba(0,0,0,1);
+  box-shadow: 7px 7px 0px 0px rgba(0,0,0,1);
+}
