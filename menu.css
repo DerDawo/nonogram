@@ -42,6 +42,7 @@ body{
 
 h1{
   font-size: 5rem;
+  word-wrap: normal;
 }
 
 .actions{
