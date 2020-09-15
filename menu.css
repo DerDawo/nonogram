@@ -46,6 +46,12 @@ h1{
   word-wrap: break-word;
 }
 
+h2{
+  margin: 0rem 2rem 1rem 2rem;
+  font-size: 3rem;
+  word-wrap: break-word;
+}
+
 .actions{
   display: flex;
   width: 100%;
@@ -98,7 +104,7 @@ h1{
   border: black 10px solid;
   color: black;
   cursor: pointer;
-  padding: 1rem;
+  padding: 0.5rem;
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -132,8 +138,10 @@ h1{
   display: flex;
   align-items: center;
   align-content: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
   flex-wrap: nowrap;
-  width: 90%;
+  width: 80%;
 }
 
 .select-level{
@@ -142,7 +150,7 @@ h1{
   border: black 10px solid;
   color: black;
   cursor: pointer;
-  padding: 1rem;
+  padding: 0.5rem;
   text-align: center;
   font-size: 1.5rem;
   transition: 0.1s;
