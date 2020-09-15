@@ -12,7 +12,6 @@ html{
 }
 
 body{
-  position: relative;
   overflow: hidden;
 }
 
@@ -42,8 +41,9 @@ body{
 }
 
 h1{
+  margin: 0rem 2rem 1rem 2rem;
   font-size: 5rem;
-  word-wrap: normal;
+  word-wrap: break-word;
 }
 
 .actions{
@@ -83,9 +83,15 @@ h1{
   box-shadow: 7px 7px 0px 0px rgba(0,0,0,1);
 }
 
+.levels{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .collapsible {
   font-family: myFirstFont;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: #E5DDCE;
   -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
   -moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
   box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
@@ -93,13 +99,14 @@ h1{
   color: black;
   cursor: pointer;
   padding: 1rem;
-  text-align: left;
+  text-align: center;
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  width: 7rem;
   transition: 0.1s;
 }
 
-.active, .collapsible:hover {
+.collapsible:hover {
   transform: translate(-3px,-3px);
   -webkit-box-shadow: 16px 16px 0px 0px rgba(0,0,0,1);
   -moz-box-shadow: 16px 16px 0px 0px rgba(0,0,0,1);
@@ -116,9 +123,36 @@ h1{
   box-shadow: 7px 7px 0px 0px rgba(0,0,0,1);
 }
 
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+.panel{
+  height: 0rem;
+  transition: 0.5s;
+  padding: 0;
+  z-index: -1;
+  opacity: 0.25;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  width: 90%;
+}
+
+.select-level{
+  font-family: myFirstFont;
+  background-color: rgba(255, 255, 255, 0);
+  border: black 10px solid;
+  color: black;
+  cursor: pointer;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  transition: 0.1s;
+  display: block;
+  width:  10rem;
+  margin: 0.5rem;
+}
+
+.select-level:hover{
+  background-color: brown;
+  border: brown 10px solid;
+  color: white;
 }
