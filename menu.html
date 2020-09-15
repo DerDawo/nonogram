@@ -6,18 +6,18 @@
 </head>
 <body>
     <div id="menu" class="screen">
-        <h1>
-            NONOGRAM
+        <h1 lang="de">
+            NONO&shy;GRAM
         </h1>
         <div class="actions">
             <a class="button" href="#fast-game" onclick="displayFastGame()">
                 Schnelles Spiel
             </a>
             <a class="button" href="#fail-game" onclick="displayFailGame()">
-                Fehler-Modus
+                Fehler Modus
             </a>
             <a class="button" href="#level-select" onclick="displayLevelSelect()">
-                Level-Auswahl
+                Level Auswahl
             </a>
             <a class="button" href="#options" onclick="displayOptions()">
                 Optionen
@@ -36,7 +36,7 @@
     </div>
     <div id="fail-game" class="screen">
         <h1>
-            Fehler-Modus
+            Fehler Modus
         </h1>
         <div class="actions">
             <a class="button" href="#menu" id="failg-back" onclick="displayFailGameNone()">
@@ -46,19 +46,48 @@
     </div>
     <div id="level-select" class="screen">
         <h1>
-            Levelauswahl
+            Level&shy;auswahl
         </h1>
-        <button class="collapsible">5 &times; 5</button>
-        <div class="content">
-            HI
-        </div>
-        <button class="collapsible">10 &times; 10</button>
-        <div class="content">
-            HI
-        </div>
-        <button class="collapsible">15 &times; 15</button>
-        <div class="content">
-            HI
+        <div class="levels">
+            <a class="collapsible" id="collaps-5" onclick="openLevel(5)">5 &times; 5</a>
+                <div class="panel" id="pan-5" data-open=0>
+                    <a class="select-level">1</a>
+                    <a class="select-level">2</a>
+                    <a class="select-level">3</a>
+                    <a class="select-level">4</a>
+                    <a class="select-level">5</a>
+                    <a class="select-level">6</a>
+                    <a class="select-level">7</a>
+                    <a class="select-level">8</a>
+                    <a class="select-level">9</a>
+                    <a class="select-level">10</a>
+                </div>           
+            <a class="collapsible" id="collaps-10" onclick="openLevel(10)">10 &times; 10</a>
+            <div class="panel" id="pan-10" data-open=0>
+                <a class="select-level">1</a>
+                <a class="select-level">2</a>
+                <a class="select-level">3</a>
+                <a class="select-level">4</a>
+                <a class="select-level">5</a>
+                <a class="select-level">6</a>
+                <a class="select-level">7</a>
+                <a class="select-level">8</a>
+                <a class="select-level">9</a>
+                <a class="select-level">10</a>
+            </div>
+            <a class="collapsible" id="collaps-15" onclick="openLevel(15)">15 &times; 15</a>
+            <div class="panel" id="pan-15" data-open=0>
+                <a class="select-level">1</a>
+                <a class="select-level">2</a>
+                <a class="select-level">3</a>
+                <a class="select-level">4</a>
+                <a class="select-level">5</a>
+                <a class="select-level">6</a>
+                <a class="select-level">7</a>
+                <a class="select-level">8</a>
+                <a class="select-level">9</a>
+                <a class="select-level">10</a>
+            </div>
         </div>
         <div class="actions">
             <a class="button" href="#menu" id="ls-back" onclick="displayLevelSelectNone()">
@@ -117,20 +146,47 @@
             document.getElementById("options").style.visibility = "hidden";
         }
 
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight){
-            content.style.maxHeight = null;
-            } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-            } 
-        });
+        function openLevel(panel){
+            var pan = "pan-"+panel;
+            console.log(pan)
+            var status = document.getElementById(pan).getAttribute("data-open")
+            if(status==0){
+                if(pan == "pan-5"){
+                    openPan("pan-5");
+                    closePan("pan-10");
+                    closePan("pan-15");
+                }else if(pan=="pan-10"){
+                    closePan("pan-5");
+                    openPan("pan-10");
+                    closePan("pan-15");
+                }else if(pan=="pan-15"){
+                    closePan("pan-5");
+                    closePan("pan-10");
+                    openPan("pan-15");
+                }
+            }else if(status==1){
+                closePan(pan);
+            }
         }
+
+        function openPan(pan){
+            document.getElementById(pan).setAttribute("data-open",1);
+            document.getElementById(pan).style.height = "5rem";
+            document.getElementById(pan).style.padding = "1rem";
+            document.getElementById(pan).style.cursor = "pointer";
+            document.getElementById(pan).style.zIndex = "0";
+            document.getElementById(pan).style.opacity = "1";
+        }
+
+        function closePan(pan){
+            document.getElementById(pan).setAttribute("data-open",0);
+            document.getElementById(pan).style.height = "0rem";
+            document.getElementById(pan).style.padding = "0";
+            document.getElementById(pan).style.cursor = "default";
+            document.getElementById(pan).style.zIndex = "-1";
+            document.getElementById(pan).style.opacity = "0.25";
+        }
+
     </script>
 </body>
 </html>
