@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="level.css">
+</head>
+<body>
+    <div class="blanket" id="win-div">
+        <div class="win-container">
+            <h2>
+                YOU WON!
+            </h2>
+            <div class="actions">
+                <a class="button" href="">
+                    REPLAY
+                </a>
+                <a class="button" href="">
+                    NEXT LEVEL
+                </a>
+                <a class="button" href="https://derdawo.github.io/nonogram/menu.html">
+                    MAIN MENU
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Updaten -->
+    <h3>
+        LEVEL 01 - 5 &times; 5
+    </h3>
+    <div class="field-actions">
+        <a class="button" href="">
+            RETRY
+        </a>
+        <a class="button" href="https://derdawo.github.io/nonogram/menu.html">
+            MAIN MENU
+        </a>
+    </div>
+    
+    <!-- Hier das Level einfügen -->
+    <!-- pro-bar-outer und emptyspace immer mit in field container einfügen -->
+    <div class="field-container" id="field-test">
+        <table id="table-nono-test"><tr id="test-row-nono-0"><th id="ttopleft" style="height: 120px; width: 120px;"></th><th id="ttop-1" class="ttop"><div class="th-container-infostop">5
+        </div></th><th id="ttop-2" class="ttop"><div class="th-container-infostop">1
+        </div></th><th id="ttop-3" class="ttop"><div class="th-container-infostop">1
+        </div></th><th id="ttop-4" class="ttop"><div class="th-container-infostop">1
+        </div></th><th id="ttop-5" class="ttop"><div class="th-container-infostop">5
+        </div></th></tr><tr id="test-row-nono-1"><th id="tleft-1" class="tleft"><div class="th-container-infosleft">1&nbsp;1&nbsp;</div></th><td id="tf-1-1" data-soll="1" data-ist="0" style="cursor: pointer;"></td><td id="tf-1-2" data-soll="0" data-ist="0" style="cursor: pointer;"></td><td id="tf-1-3" data-soll="0" data-ist="0" style="cursor: pointer;"></td><td id="tf-1-4" data-soll="0" data-ist="0" style="cursor: pointer;"></td><td id="tf-1-5" data-soll="1" data-ist="0" style="cursor: pointer;"></td></tr><tr id="test-row-nono-2"><th id="tleft-2" class="tleft"><div class="th-container-infosleft">1&nbsp;1&nbsp;</div></th><td id="tf-2-1" data-soll="1" data-ist="0" style="cursor: pointer;"></td><td id="tf-2-2" data-soll="0" data-ist="0" style="cursor: pointer;"></td><td id="tf-2-3" data-soll="0" data-ist="0" style="cursor: pointer;"></td><td id="tf-2-4" data-soll="0" data-ist="0" style="cursor: pointer;"></td><td id="tf-2-5" data-soll="1" data-ist="0" style="cursor: pointer;"></td></tr><tr id="test-row-nono-3"><th id="tleft-3" class="tleft"><div class="th-container-infosleft">5&nbsp;</div></th><td id="tf-3-1" data-soll="1" data-ist="0" style="cursor: pointer;"></td><td id="tf-3-2" data-soll="1" data-ist="0" style="cursor: pointer;"></td><td id="tf-3-3" data-soll="1" data-ist="0" style="cursor: pointer;"></td><td id="tf-3-4" data-soll="1" data-ist="0" style="cursor: pointer;"></td><td id="tf-3-5" data-soll="1" data-ist="0" style="cursor: pointer;"></td></tr><tr id="test-row-nono-4"><th id="tleft-4" class="tleft"><div class="th-container-infosleft">1&nbsp;1&nbsp;</div></th><td id="tf-4-1" data-soll="1" data-ist="0" style="cursor: pointer;"></td><td id="tf-4-2" data-soll="0" data-ist="0" style="cursor: pointer;"></td><td id="tf-4-3" data-soll="0" data-ist="0" style="cursor: pointer;"></td><td id="tf-4-4" data-soll="0" data-ist="0" style="cursor: pointer;"></td><td id="tf-4-5" data-soll="1" data-ist="0" style="cursor: pointer;"></td></tr><tr id="test-row-nono-5"><th id="tleft-5" class="tleft"><div class="th-container-infosleft">1&nbsp;1&nbsp;</div></th><td id="tf-5-1" data-soll="1" data-ist="0" style="cursor: pointer;"></td><td id="tf-5-2" data-soll="0" data-ist="0" style="cursor: pointer;"></td><td id="tf-5-3" data-soll="0" data-ist="0" style="cursor: pointer;"></td><td id="tf-5-4" data-soll="0" data-ist="0" style="cursor: pointer;"></td><td id="tf-5-5" data-soll="1" data-ist="0" style="cursor: pointer;"></td></tr></table>
+        <div id="emptyspace" style="height: 20px;"></div>
+        <div id="pro-bar-outer" style="height: 20px; width: 300px;"><div id="pro-bar-inner" style="height: 20px; width: 0px;"><div id="progress-percentage">0.00%</div></div></div>
+    </div>
+
+    <script src="5x5-fail-mode.js"></script>
+</body>
+</html>
