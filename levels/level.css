@@ -1,0 +1,207 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(\\LEMONMILK-Bold.otf);
+}
+
+html{
+  background-color: #E5DDCE;
+  border-spacing:25px;
+  font-family: myFirstFont;
+  width: 100%;
+  height: 100%;
+  margin:0;
+}
+
+body{
+  text-align: center;
+}
+
+h3{
+  margin: 20px;
+  font-size: 70px;
+}
+
+/*Sieg Div*/
+.blanket{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #2222227a;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.win-container{
+  border: black 10px solid;
+  background-color: #E5DDCE;
+  -webkit-box-shadow: 10px 10px 0px 0px #222222;
+  -moz-box-shadow: 10px 10px 0px 0px #222222;
+  box-shadow: 10px 10px 0px 0px #222222;
+  transition: 0.1s;
+  padding: 30px;
+  text-align: center;
+}
+
+.win-container:hover{
+  border: brown 10px solid;
+  -webkit-box-shadow: 16px 16px 0px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 16px 16px 0px 0px rgba(0,0,0,1);
+  box-shadow: 16px 16px 0px 0px rgba(0,0,0,1);
+}
+
+h2{
+  margin-top: 10px;
+  font-size: 70px;
+  word-wrap: break-word;
+}
+
+.actions{
+  width: 100%;
+}
+
+.button{
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  background-color: brown;
+  font-size: 20px;
+  padding: 10px;
+  margin: 1rem;
+  -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+  box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+  transition: 0.1s;
+  text-decoration: none;
+  text-align: center;
+
+}
+
+.button:hover{
+  transform: translate(-3px,-3px);
+  -webkit-box-shadow: 16px 16px 0px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 16px 16px 0px 0px rgba(0,0,0,1);
+  box-shadow: 16px 16px 0px 0px rgba(0,0,0,1);
+}
+
+.button:active{
+  transform: translate(3px,3px);
+  -webkit-box-shadow: 7px 7px 0px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 7px 7px 0px 0px rgba(0,0,0,1);
+  box-shadow: 7px 7px 0px 0px rgba(0,0,0,1);
+}
+
+.field-actions{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+/*Das Feld, was alle sachen beinhaltet*/
+.field-container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*allgemeine Tabellen Style*/
+table {
+  font-family: myFirstFont;
+  border-collapse: collapse;
+  border: black 10px solid;
+  -webkit-box-shadow: 10px 10px 0px 0px #333333;
+  -moz-box-shadow: 10px 10px 0px 0px #333333;
+  box-shadow: 10px 10px 0px 0px #333333;
+  transition: 0.1s;
+  font-size: 20px;
+  letter-spacing:6px;
+  margin: 10px;
+}
+
+table:hover{
+  border: brown 10px solid;
+  -webkit-box-shadow: 16px 16px 0px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 16px 16px 0px 0px rgba(0,0,0,1);
+  box-shadow: 16px 16px 0px 0px rgba(0,0,0,1);
+}
+
+th {
+  border: 1px solid #999999;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+}
+
+td{
+  border: 1px solid #999999;
+}
+
+/*test-Feld*/
+.ttop{
+  position: relative;
+}
+
+.tleft{
+  position: relative;
+}
+
+.th-container-infostop{
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  text-align: center;
+}
+
+.th-container-infosleft{
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 40px;
+  text-align: center;
+}
+
+/*Fortschritt-Leiste*/
+#pro-bar-outer{
+  background-color: #000000;
+  border-radius: 20px;
+  padding: 2px;
+  transition: 0.1s;
+  -webkit-box-shadow: 7px 7px 0px 0px#333333;
+  -moz-box-shadow: 7px 7px 0px 0px #333333;
+  box-shadow: 7px 7px 0px 0px #333333;
+}
+
+#pro-bar-inner{
+  background-color: brown;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+#progress-percentage{
+  font-family: myFirstFont;
+  font-size: 1rem;
+  color: white;
+  margin-left: 25px;
+  margin-right: 25px;
+  text-align: center;
+}
+
+#pro-bar-outer:hover{
+  -webkit-box-shadow: 10px 10px 0px 0px #000000;
+  -moz-box-shadow: 10px 10px 0px 0px #000000;
+  box-shadow: 10px 10px 0px 0px #000000;
+}
