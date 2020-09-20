@@ -171,8 +171,8 @@
 
         function openPan(pan){
             document.getElementById(pan).setAttribute("data-open",1);
-            document.getElementById(pan).style.height = "5rem";
-            document.getElementById(pan).style.padding = "1rem";
+            document.getElementById(pan).style.height = "100px";
+            document.getElementById(pan).style.padding = "10px";
             document.getElementById(pan).style.cursor = "pointer";
             document.getElementById(pan).style.zIndex = "0";
             document.getElementById(pan).style.opacity = "1";
@@ -180,7 +180,7 @@
 
         function closePan(pan){
             document.getElementById(pan).setAttribute("data-open",0);
-            document.getElementById(pan).style.height = "0rem";
+            document.getElementById(pan).style.height = "0px";
             document.getElementById(pan).style.padding = "0";
             document.getElementById(pan).style.cursor = "default";
             document.getElementById(pan).style.zIndex = "-1";
