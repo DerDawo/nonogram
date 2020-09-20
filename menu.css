@@ -167,3 +167,39 @@ h2{
   border: brown 10px solid;
   color: white;
 }
+
+@media only screen and (max-width: 768px) {
+  h1{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    word-wrap: break-word;
+    cursor: default;
+  }
+  
+  h2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    word-wrap: break-word;
+    cursor: default;
+  }
+
+  .actions{
+    padding: 2%;
+    display: flex;
+    width: 96%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+
+  .button{
+    height: 60px;
+  }
+
+  .collapsible {
+    width: 80%;
+  }
+  
+  }
