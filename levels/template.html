@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="level.css">
+</head>
+<body>
+    <div class="blanket" id="win-div">
+        <div class="win-container">
+            <h2>
+                YOU WON!
+            </h2>
+            <div class="actions">
+                <a class="button" href="">
+                    REPLAY
+                </a>
+                <a class="button" href="">
+                    NEXT LEVEL
+                </a>
+                <a class="button" href="https://derdawo.github.io/nonogram/menu.html">
+                    MAIN MENU
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Updaten -->
+    <h3>
+        LEVEL 05 - 10 &times; 10
+    </h3>
+    <div class="field-actions">
+        <a class="button" href="">
+            RETRY
+        </a>
+        <a class="button" href="https://derdawo.github.io/nonogram/menu.html">
+            MAIN MENU
+        </a>
+    </div>
+    
+    <!-- Hier das Level einfügen -->
+    <!-- pro-bar-outer und emptyspace immer mit in field container einfügen -->
+    <div class="field-container" id="field-test">
+
+        <div id="emptyspace" style="height: 20px;"></div>
+        <div id="pro-bar-outer" style="height: 20px; width: 300px;"><div id="pro-bar-inner" style="height: 20px; width: 0px;"><div id="progress-percentage">0.00%</div></div></div>
+    </div>
+
+    <script src="5x5-fail-mode.js"></script>
+</body>
+</html>
