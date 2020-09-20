@@ -201,3 +201,48 @@ td{
   -moz-box-shadow: 10px 10px 0px 0px #000000;
   box-shadow: 10px 10px 0px 0px #000000;
 }
+
+@media only screen and (max-width: 768px) {
+  h3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    word-wrap: break-word;
+    cursor: default;
+  }
+
+  h2{
+    margin-top: 10px;
+    font-size: 40px;
+    word-wrap: break-word;
+    cursor: default;
+  }
+
+  .actions{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  table {
+    font-size: 15px;
+    letter-spacing:3px;
+    margin: 5px;
+  }
+  
+  th{
+    height: 30px;
+    width: 30px;
+  }
+
+  .th-container-infosleft{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #ttopleft{
+    height: 125px;
+    width: 125px;
+  } 
+  
+  }
