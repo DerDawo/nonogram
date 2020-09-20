@@ -19,6 +19,7 @@ body{
 h3{
   margin: 20px;
   font-size: 70px;
+  cursor: default;
 }
 
 /*Sieg Div*/
@@ -57,6 +58,7 @@ h2{
   margin-top: 10px;
   font-size: 70px;
   word-wrap: break-word;
+  cursor: default;
 }
 
 .actions{
@@ -77,7 +79,6 @@ h2{
   transition: 0.1s;
   text-decoration: none;
   text-align: center;
-
 }
 
 .button:hover{
@@ -132,11 +133,11 @@ table:hover{
   box-shadow: 16px 16px 0px 0px rgba(0,0,0,1);
 }
 
-th {
-  border: 1px solid #999999;
+th{
   height: 40px;
   width: 40px;
   padding: 0;
+  cursor: default;
 }
 
 td{
@@ -145,33 +146,28 @@ td{
 
 /*test-Feld*/
 .ttop{
-  position: relative;
+  border-left: 1px solid #999999;
+  vertical-align: bottom;
 }
 
 .tleft{
-  position: relative;
+  width: 100%;
+  border-top: 1px solid #999999;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .th-container-infostop{
-  margin: 0;
-  padding: 0;
-  word-wrap: break-word;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 40px;
-  text-align: center;
+  width: 100%;
+  margin-top: 5px;
 }
 
 .th-container-infosleft{
-  margin: 0;
-  padding: 0;
-  word-wrap: break-word;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 40px;
   text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /*Fortschritt-Leiste*/
