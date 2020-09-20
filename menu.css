@@ -188,6 +188,7 @@ h2{
   .actions{
     padding: 2%;
     display: flex;
+    flex-wrap: wrap;
     width: 96%;
     align-items: center;
     justify-content: center;
