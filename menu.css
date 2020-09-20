@@ -41,15 +41,19 @@ body{
 }
 
 h1{
-  margin: 0rem 2rem 1rem 2rem;
-  font-size: 4.5rem;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 70px;
   word-wrap: break-word;
+  cursor: default;
 }
 
 h2{
-  margin: 0rem 2rem 1rem 2rem;
-  font-size: 3rem;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 70px;
   word-wrap: break-word;
+  cursor: default;
 }
 
 .actions{
@@ -65,8 +69,8 @@ h2{
   text-align: center;
   color: white;
   background-color: brown;
-  font-size: 1.5rem;
-  padding: 1rem;
+  font-size: 20px;
+  padding: 10px;
   margin: 1rem;
   -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
   -moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
@@ -104,11 +108,11 @@ h2{
   border: black 10px solid;
   color: black;
   cursor: pointer;
-  padding: 0.5rem;
+  font-size: 20px;
+  padding: 10px;
+  width: 109px;
   text-align: center;
-  font-size: 1.5rem;
   margin-bottom: 1rem;
-  width: 7rem;
   transition: 0.1s;
 }
 
@@ -130,18 +134,16 @@ h2{
 }
 
 .panel{
-  height: 0rem;
+  height: 0px;
   transition: 0.5s;
   padding: 0;
   z-index: -1;
   opacity: 0.25;
-  display: flex;
-  align-items: center;
-  align-content: center;
   overflow-x: scroll;
   overflow-y: hidden;
-  flex-wrap: nowrap;
   width: 80%;
+  display: flex;
+  align-items: center;
 }
 
 .select-level{
@@ -150,13 +152,14 @@ h2{
   border: black 10px solid;
   color: black;
   cursor: pointer;
-  padding: 0.5rem;
   text-align: center;
-  font-size: 1.5rem;
   transition: 0.1s;
   display: block;
-  width:  10rem;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 55px;
   margin: 0.5rem;
+  text-decoration: none;
 }
 
 .select-level:hover{
