@@ -17,6 +17,8 @@ body{
 }
 
 h3{
+    margin: 20px;
+  margin-bottom: 0;
   font-size: 70px;
   cursor: default;
 }
@@ -55,9 +57,16 @@ h3{
 
 h2{
   margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 70px;
   word-wrap: break-word;
   cursor: default;
+}
+
+p{
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .actions{
@@ -99,7 +108,8 @@ h2{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 20px;
+  margin: 10px;
+  margin-top: 0;
 }
 
 /*Das Feld, was alle sachen beinhaltet*/
