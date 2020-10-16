@@ -239,10 +239,19 @@ td{
     letter-spacing:3px;
     margin: 5px;
   }
-  
+    
   th{
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
+  }
+
+  .th-container-infosleft{
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  .th-container-infostop{
+    margin-top: 2px;
   }
   
   }
