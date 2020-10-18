@@ -240,9 +240,14 @@ td{
     margin: 5px;
   }
     
+  th{
+    height: 30px;
+    width: 30px;
+  }
+  
   td{
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
   }
 
   .th-container-infosleft{
