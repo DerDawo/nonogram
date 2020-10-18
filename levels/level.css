@@ -233,6 +233,25 @@ td{
     display: flex;
     flex-direction: column;
   }
+
+  .win-container{
+    border: black 5px solid;
+    background-color: #E5DDCE;
+    -webkit-box-shadow: 5px 5px 0px 0px #222222;
+    -moz-box-shadow: 5px 5px 0px 0px #222222;
+    box-shadow: 5px 5px 0px 0px #222222;
+    transition: 0s;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .win-container:hover{
+    border: black 5px solid;
+    -webkit-box-shadow: 5px 5px 0px 0px #222222;
+    -moz-box-shadow: 5px 5px 0px 0px #222222;
+    box-shadow: 5px 5px 0px 0px #222222;
+  }
+  
   
   table {
     border: black 5px solid;
@@ -240,7 +259,7 @@ td{
     -moz-box-shadow: 0px 0px 0px 0px #00000000;
     box-shadow: 0px 0px 0px 0px #00000000;
     transition: 0s;
-    font-size: 15px;
+    font-size: 10px;
     letter-spacing:3px;
     margin: 5px;
   }
@@ -253,10 +272,10 @@ td{
   }
     
   th{
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
   }
-  
+
   td{
     height: 30px;
     width: 30px;
@@ -270,5 +289,37 @@ td{
   .th-container-infostop{
     margin-top: 2px;
   }
-  
+
+  #pro-bar-outer{
+    background-color: #333333;
+    border-radius: 20px;
+    padding: 2px;
+    transition: 0.1s;
+    -webkit-box-shadow: 0px 0px 0px 0px#333333;
+    -moz-box-shadow: 0px 0px 0px 0px#333333;
+    box-shadow: 0px 0px 0px 0px#333333;
   }
+  
+  #pro-bar-inner{
+    background-color: brown;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  
+  #progress-percentage{
+    font-family: myFirstFont;
+    font-size: 1rem;
+    color: white;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+  }
+  
+  #pro-bar-outer:hover{
+    -webkit-box-shadow: 0px 0px 0px 0px#333333;
+    -moz-box-shadow: 0px 0px 0px 0px#333333;
+    box-shadow: 0px 0px 0px 0px#333333;
+  }
+  
+
+}
