@@ -60,6 +60,16 @@ function checkForWin(){
         }
     }
     if(win_conditi==act_account){
+        coname = String(document.getElementsByTagName("h3")[0].id.split("_")[0]+"_"+document.getElementsByTagName("h3")[0].id.split("_")[1]+"_"+String((Number(document.getElementsByTagName("h3")[0].id.split("_")[2])+1)))+"_"+"unlocked"
+        setCookie(coname, true, 365)
         document.getElementById("win-div").style.display = "flex";
     }
 }   
+
+//Cookie setzen
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
