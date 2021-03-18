@@ -1,0 +1,180 @@
+@font-face {
+  font-family: LEMONMILK-Bold;
+  src: url(../LEMONMILK-Bold.otf);
+}
+
+html{
+  font-family: LEMONMILK-Bold;
+  background-color: #E5DDCE;
+  text-align: center;
+  scroll-behavior: smooth;
+  padding: 0;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+body{
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.screen{
+  transition: 0.5s ease-out;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1{
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 100px;
+  word-wrap: break-word;
+  cursor: default;
+}
+
+h2{
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 50px;
+  word-wrap: break-word;
+  cursor: default;
+}
+
+.button{
+  font-family: LEMONMILK-Bold;
+  cursor: pointer;
+  color: white;
+  background-color: brown;
+  font-size: 20px;
+  padding: 10px;
+  margin: 1rem;
+  -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+  box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+  transition: 0.1s;
+  border: 0;
+  text-decoration: none;
+  width: 200px;
+  flex-grow: 1;
+  opacity: 0;
+  pointer-events:none;
+}
+
+.buttIcon{
+  max-height: 20px;
+  filter: invert(100);
+}
+
+.button:hover{
+  transform: translate(-3px,-3px);
+  -webkit-box-shadow: 16px 16px 0px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 16px 16px 0px 0px rgba(0,0,0,1);
+  box-shadow: 16px 16px 0px 0px rgba(0,0,0,1);
+  border: 0;
+}
+
+.button:active{
+  transform: translate(3px,3px);
+  -webkit-box-shadow: 7px 7px 0px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 7px 7px 0px 0px rgba(0,0,0,1);
+  box-shadow: 7px 7px 0px 0px rgba(0,0,0,1);
+  border: 0;
+}
+
+#backbutton{
+  background-color: rgba(255, 255, 255, 0);
+  border: black 10px solid;
+  color: black;
+  cursor: pointer;
+  opacity: 1;
+  pointer-events:all;
+}
+
+.information{
+  padding: 30px;
+}
+
+.actions{
+  display: flex;
+}
+
+/*allgemeine Tabellen Style*/
+table {
+  border-collapse: collapse;
+  border: black 10px solid;
+  -webkit-box-shadow: 10px 10px 0px 0px #222222;
+  -moz-box-shadow: 10px 10px 0px 0px #222222;
+  box-shadow: 10px 10px 0px 0px #222222;
+  transition: 0.1s;
+  font-size: 20px;
+}
+
+table:hover{
+  border: brown 10px solid;
+  -webkit-box-shadow: 16px 16px 0px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 16px 16px 0px 0px rgba(0,0,0,1);
+  box-shadow: 16px 16px 0px 0px rgba(0,0,0,1);
+}
+
+th{
+  height: 40px;
+  width: 40px;
+  padding: 0;
+}
+
+td{
+  border: 1px solid #999999;
+}
+
+/*test-Feld*/
+.ttop{
+  border-left: 1px solid #999999;
+  vertical-align: bottom;
+}
+
+.tleft{
+  width: 100%;
+  border-top: 1px solid #999999;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.th-container-infostop{
+  width: 100%;
+  margin-top: 5px;
+}
+
+.th-container-infosleft{
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.table-cont{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.description{
+  max-width: 300px;
+  margin: 10px;
+}
+
+.a{
+  max-width: 500px
+}
