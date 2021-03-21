@@ -11,8 +11,8 @@ html{
   padding: 0;
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
+    -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Old versions of Firefox */
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
@@ -178,3 +178,119 @@ td{
 .a{
   max-width: 500px
 }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 768px) {
+  .mobiletext{
+    display: none;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+
+  h1{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-size: 50px;
+    word-wrap: break-word;
+    cursor: default;
+  }  
+
+  h2{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-size: 50px;
+    word-wrap: break-word;
+    cursor: default;
+  }
+
+  .table-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .desktoptext{
+    display: none;
+  }
+
+  .description{
+    margin: 20px;
+  }
+
+  p{
+    font-size: 15px;
+  }
+
+  .button{
+    font-size: 15px;
+    padding: 10px;
+    margin: 1rem;
+    max-width: 175px;
+  }
+
+  
+  #backbutton{
+    background-color: rgba(255, 255, 255, 0);
+    border: black 5px solid;
+    color: black;
+    cursor: pointer;
+    margin-top: auto;
+    max-width: 175px;
+  }
+
+  /*allgemeine Tabellen Style*/
+  table {
+    border: black 5px solid;
+    -webkit-box-shadow: 0 #00000000;
+    -moz-box-shadow: 0 #00000000;
+    box-shadow: 0 #00000000;
+  }
+
+  table:hover{
+    border: black 5px solid;
+    -webkit-box-shadow: 0 #00000000;
+    -moz-box-shadow: 0 #00000000;
+    box-shadow: 0 #00000000;
+  }
+
+  th{
+    height: 40px;
+    width: 40px;
+    padding: 0;
+  }
+
+  td{
+    border: 1px solid #999999;
+  }
+
+  /*test-Feld*/
+  .ttop{
+    border-left: 1px solid #999999;
+    vertical-align: bottom;
+  }
+
+  .tleft{
+    width: 100%;
+    border-top: 1px solid #999999;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .th-container-infostop{
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .th-container-infosleft{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+}
+
