@@ -50,7 +50,7 @@ function changeStatus(){
     if(status==0){
         document.getElementById(this.id).setAttribute("data-ist","1")
         if(soll==0){
-            document.getElementById(this.id).style.backgroundColor = "red"
+            document.getElementById(this.id).style.backgroundColor = "brown"
             ist-=1
         }else if(soll==1){
             document.getElementById(this.id).style.backgroundColor = "black"
