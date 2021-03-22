@@ -244,16 +244,16 @@ td{
   /*allgemeine Tabellen Style*/
   table {
     border: black 5px solid;
-    -webkit-box-shadow: 0 #00000000;
-    -moz-box-shadow: 0 #00000000;
-    box-shadow: 0 #00000000;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
   }
 
   table:hover{
     border: black 5px solid;
-    -webkit-box-shadow: 0 #00000000;
-    -moz-box-shadow: 0 #00000000;
-    box-shadow: 0 #00000000;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
   }
 
   th{
@@ -293,4 +293,3 @@ td{
   }
   
 }
-
